@@ -1,0 +1,98 @@
+\documentclass[,a6paper,openany,twoside]{jsarticle}
+%\documentclass[9pt,a5paper,tombo,openany]{jsbook}
+
+%\usepackage{graphicx} % support the \includegraphics command and options
+\usepackage{colortbl}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{wrapfig}
+\usepackage{url}
+\usepackage{enumitem}
+\usepackage[paperwidth=74mm,paperheight=105mm,inner=4mm,outer=9mm,bottom=5mm,top=5mm]{geometry}
+
+\begin{document}
+
+%\section{可視化法学}
+
+\thispagestyle{empty} 
+\includegraphics[width=64mm,height=93mm,clip]{leaflet_img/front.pdf}
+%\vspace*{\stretch{1}}
+
+\newpage
+
+\setcounter{page}{1}
+
+{\huge 可視化法学}
+
+可視化法学とはとかく分かりづらい法律を情報技術を利用して可視化する試みだ。法律間の参照構造を抜き出しその構造を可視化している。一つ一つの円が法律を表している。円から円へ繋がっている線は法律から別の法律への参照になっている。
+例えば救急救命士法は刑法への参照があるので刑法へ線を繋げている。
+このようなルールで色々な法律の参照構造を可視化した。
+このリーフレットでは「可視化法学」の冊子でも紹介している幾つかの法律を抜粋して載せている。
+ちなみに著者はプログラマーで、法律を学んだことなど一度もないw。
+
+%\chapter{刑事分野}
+
+%{\huge 様々な法律}
+
+%上記のルールを使って様々な法律を見てみる。冊子でももっと多くの法律を分析している。リーフレット向けに幾つか分析した法律をダイジェストとして載せる。
+
+\newpage
+
+{\huge 刑事分野}
+
+刑事分野の法律を載せている。刑事分野では刑法が最も大事だ。全く予想していなかったのだがアルゴリズムを使って刑事分野を可視化したら、「売春防止法」、「少年法」、「更生保護法」が近くの場所に配置された。つまりプログラムで法律の意図を解釈せずとも似た性質（福祉に近い性質を持つ）法律が自動的に近い場所に配置された（互いに参照しているのだろう）。機械的に似たカテゴリを見つけることが出来るということがわかった。
+
+\includegraphics[width=53mm,clip]{img/keiji-crop.pdf}
+
+%\chapter{文化分野}
+
+{\huge 文化分野}
+
+文化分野では文化財保護法が意外と多くの参照を持つ。コミケに来ているような人に関係する著作権法はそこまで大きな参照を持っていない。意外と大きなウェイトを占めるのが、国民の祝日に関する法律だ。
+
+\includegraphics[width=53mm,clip]{img/bunka-crop.pdf}
+
+%\chapter{河川分野}
+
+%{\huge 河川分野}
+
+%河川分野で最も需要なのは河川法だ。もし河川に関する法律を学びたければ河川法から学んでいくと良いだろう。
+
+%\includegraphics[width=43mm,clip]{img/河川-crop.pdf}
+
+%\chapter{教育分野}
+
+{\huge 教育分野}
+
+教育分野では学校教育法が最も重要だ。全部で500本以上の法律から参照されている。その他地味に参照が多いのが私立学校教職員共済法と放送大学学園法だ。何故か放送大学に関しての法律が多い。なぜだかよくわからない。
+
+\includegraphics[width=53mm,clip]{img/kyouiku-crop.pdf}
+
+%\chapter{憲法分野}
+
+
+{\huge 憲法分野}
+
+憲法分野では憲法に対する参照が多いのはまあ想像出来る。しかし意外にも「沖縄の復帰に関する法律」に対する参照も多い。沖縄が日本が占領から脱した跡もアメリカに占領され続けていたという痕跡が法律にも残っている。
+
+\includegraphics[width=53mm,clip]{img/kenpou-crop2.pdf}
+
+\newpage
+
+{\huge 終わりに}
+
+いかがだっただろうか。冊子版ではここに挙げた法律以外にも鉱業法とか色々な法律を分析している。
+法律に対して情報技術を使って可視化する試みに興味を持ってくれたら嬉しい。
+
+\vspace*{\stretch{1}}
+\begin{flushright}
+\begin{minipage}{1.0\hsize}
+\begin{description}[labelindent=1em ,labelwidth=0cm, labelsep*=1em, leftmargin =!, style = standard]%
+  \item{著者:} 芝尾幸一郎（へその緒）
+  \item{twitter:} \verb|@shibacow|
+  \item{mail:} \verb|shibacow@gmail.com|
+  \item{発行:} 2016年12月31日（C91）
+\end{description}
+\end{minipage}
+\end{flushright}
+
+\end{document}
